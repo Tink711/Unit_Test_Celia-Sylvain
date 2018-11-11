@@ -135,7 +135,7 @@ namespace ImageEdgeDetection
 
         private void ApplyEdgeDetection(bool preview)
         {
-            if (previewBitmap == null || edgeDetectionListItems[comboEdgeDetection.SelectedItem.ToString()].GetType().Name.Equals("None"))
+            if (previewBitmap == null || comboEdgeDetection.SelectedIndex == -1)
             {
                 return;
             }
